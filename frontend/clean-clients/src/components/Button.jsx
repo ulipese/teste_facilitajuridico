@@ -3,10 +3,23 @@ import "../App.css";
 function Button(props) {
   return (
     <>
-  
-      <button type={props.type} className={props.content + " button"}>
-        {props.content}
-      </button>
+      {props.class === "search" ? (
+        <button
+          type={props.type}
+          className={props.class + " button"}
+          onClick={props.onClick}
+        >
+          <img src="/images/search.svg" alt="Search" className="search__icon" />
+        </button>
+      ) : (
+        <button
+          type={props.type}
+          className={props.class + " button"}
+          onClick={props.onClick}
+        >
+          {props.content}
+        </button>
+      )}
     </>
   );
 }

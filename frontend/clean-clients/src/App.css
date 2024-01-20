@@ -63,16 +63,69 @@ body {
   border-radius: 0.8em;
   box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.3);
   padding: 1em;
+  padding-top: 2em;
 }
 .card__title {
   color: var(--primary-blue);
 }
 .card__title.search {
-  margin-top: 1em;
 }
+
 .card__subtitle {
   color: var(--black);
   font-weight: 600;
+}
+.backgroundCard.popup {
+  display: none;
+  position: absolute;
+  top: 4em;
+}
+.backgroundCard.popup.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.card__subtitle.popup {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+.card.popup {
+  position: absolute;
+  top: 0;
+  padding-top: 1em;
+}
+.card__back {
+  width: 1em;
+  position: absolute;
+  left: 1.5em;
+  top: 2.2em;
+  cursor: pointer;
+}
+.card__title.popup {
+  margin-top: -0.2em;
+}
+.line-popup {
+  margin-top: 4em;
+}
+.searchedClients.popup {
+  height: 70%;
+  margin-bottom: -3em;
+  padding-left: 3em;
+  padding-right: -1em;
+}
+.client.popup {
+  position: relative;
+  width: 90%;
+}
+.client__coord {
+  color: var(--white);
+  font-weight: bold;
+  position: absolute;
+  right: 1em;
 }
 .form {
   height: 100%;
@@ -95,7 +148,28 @@ body {
   border: none;
   border-radius: 0.8em;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
-  text-indent: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.form__input.search {
+  padding-right: 4.5em;
+}
+.form__input-search-client {
+  position: relative;
+}
+.button.search {
+  width: 3em;
+  height: 2.6em;
+  position: absolute;
+  top: 0.5em;
+  right: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8em;
+}
+.search__icon {
+  width: 1.5em;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -125,9 +199,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   background-color: var(--secondary-blue);
 }
-.button.Buscar {
-  width: 4em;
-}
+
 .line {
   background-color: var(--gray);
   width: 60%;
@@ -176,5 +248,19 @@ input::-webkit-inner-spin-button {
   }
   .card {
     width: 22em;
+  }
+  .card__title.popup {
+    font-size: 1.6em;
+    margin-top: -0.5em;
+  }
+  .card__subtitle.popup {
+    font-size: 0.8em;
+  }
+  .client.popup {
+    width: 100%;
+    margin-left: -1.2em;
+  }
+  .client__coord {
+    font-size: .8em;
   }
 }
