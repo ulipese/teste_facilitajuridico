@@ -3,7 +3,6 @@
 ## Table of contents
 - [Design](#design) 
 - [Como rodar](#como-rodar)
-- [About App](#my-process)
 - [Author](#author)
 
 ## Design
