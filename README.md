@@ -4,7 +4,7 @@
 - [Design](#design)
 - [Requisitos](#requisitos-de-instalação)
 - [Como rodar](#como-rodar)
-- [Author](#author)
+- [Autor](#author)
 
 ## Design
   ### Cadastro de clientes
@@ -28,7 +28,7 @@
   6. Após o backend rodar sem problemas na localhost:3000, vá para o diretório frontend/clean-clients e dê um "npm install" com o terminal, para instalação das dependências;
   7. Após instalar as dependências, dê um "npm start" no mesmo diretório, e abra o localhost:3001, que é o endereço onde será mostrado o front rodando localmente, no qual já estará tudo funcionando corretamente.
      
-## Author
+## Autor
 - Linkedin - [Felipe Sousa](https://www.linkedin.com/in/ulipese)
 - Github - [Felipe Sousa](https://www.github.com/ulipese)
 - Frontend Mentor - [@ulipese](https://www.frontendmentor.io/profile/ulipese)
