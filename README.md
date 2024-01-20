@@ -4,7 +4,7 @@
 - [Design](#design)
 - [Requisitos](#requisitos-de-instalação)
 - [Como rodar](#como-rodar)
-- [Autor](#author)
+- [Autor](#autor)
 
 ## Design
   ### Cadastro de clientes
