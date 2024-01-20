@@ -6,7 +6,7 @@ const router = require("./routes");
 
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: '*',
   })
 );
 app.use(express.json());

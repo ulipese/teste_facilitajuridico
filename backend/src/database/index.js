@@ -8,10 +8,13 @@ const client = new Client({
   password: process.env.DBPASSWORD,
   database: "cleanclients",
 });
+try {
+  client.connect();
 
-client.connect();
-
-exports.query = async (query, values) => {
-  const { rows } = await client.query(query, values);
-  return rows;
-};
+  exports.query = async (query, values) => {
+    const { rows } = await client.query(query, values);
+    return rows;
+  };
+} catch (err) {
+  console.log(err);
+}

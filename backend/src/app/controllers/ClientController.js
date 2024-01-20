@@ -50,7 +50,7 @@ class ClientController {
   async show(request, response) {
     const { clientName, clientEmail, clientTel } = request.body;
 
-    if (clientName || clientEmail || (clientTel && clientTel.length != 11)) {
+    if (clientName || clientEmail || (clientTel && clientTel.length === 11)) {
       if (clientName) {
         const foundClient = await ClientRepository.findByName(clientName);
         if (foundClient) {
@@ -66,7 +66,7 @@ class ClientController {
         return response.status(404).json("Client doesn't exist");
       }
       if (clientTel) {
-        const foundClient = await ClientRepository.findByTel(clientTel);
+        const foundClient = await ClientRepository.findByTel(Number(clientTel));
         if (foundClient) {
           return response.status(200).json(foundClient);
         }

@@ -9,17 +9,16 @@ class ClientRepository {
     return nextClients;
   }
   async findByName(clientName) {
-    const [foundClient] = await db.query(
-      "SELECT * FROM Client WHERE clientName = $1",
-      [clientName]
+    const foundClient = await db.query(
+      "SELECT * FROM Client WHERE clientName LIKE $1",
+      ["%" + clientName + "%"]
     );
-
     return foundClient;
   }
   async findByEmail(clientEmail) {
     const [foundClient] = await db.query(
-      "SELECT * FROM Client WHERE clientEmail = $1",
-      [clientEmail]
+      "SELECT * FROM Client WHERE clientEmail LIKE $1",
+      ["%" + clientEmail + "%"]
     );
 
     return foundClient;
