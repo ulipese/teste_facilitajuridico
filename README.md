@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Design](#design)
-- [Requisitos](#requisitos)
+- [Requisitos](#requisitos-de-instalação)
 - [Como rodar](#como-rodar)
 - [Author](#author)
 
