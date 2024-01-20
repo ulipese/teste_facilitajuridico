@@ -15,8 +15,8 @@
   ![image](https://github.com/ulipese/teste_facilitajuridico/assets/70922407/fa963091-348b-4e38-8473-ce931ae1fc70)
 
 ## Requisitos de Instalação
-  1. É necessário instalar o postgresql (v16.1-1), e ter algum sgbd (caso não queira usar o terminal) de postgresql para rodar a query do banco, caso não tenha nenhum dos dois, [instale por aqui](https://www.postgresql.org/download/);
-  2. É necessário ter npm (8.3.1) e nodejs (v16.14.0) instalados em sua máquina, caso não tenha, [instale aqui](https://nodejs.org/en/download);
+  1. É necessário instalar o PostgreSQL (v16.1-1), e ter algum sgbd (caso não queira usar o terminal) de postgresql para rodar a query do banco, caso não tenha nenhum dos dois, [instale por aqui](https://www.postgresql.org/download/);
+  2. É necessário ter NPM (8.3.1) e NodeJS (v16.14.0) instalados em sua máquina, caso não tenha, [instale aqui](https://nodejs.org/en/download);
   3. É necessário ter algum editor de código, e um terminal, seja ele integrado ao editor ou não.
 
 ## Como rodar
