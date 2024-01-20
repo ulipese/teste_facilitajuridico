@@ -1,6 +1,6 @@
 # teste_facilitajuridico
 
-## Table of contents
+## Sumário
 - [Design](#design)
 - [Requisitos](#requisitos-de-instalação)
 - [Como rodar](#como-rodar)
